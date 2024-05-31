@@ -1,0 +1,39 @@
+header{
+  background-color: rgb(106, 119, 236);
+  padding: 1px;
+  border-bottom: 2px solid rgb(252, 252, 252);
+  border-radius: 10px;
+}
+a{
+  color: rgb(255, 255, 255);
+}
+
+a:hover{
+  background: rgb(192, 198, 250);
+  color:black;
+  border-radius: 10px;
+}
+
+.container{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content:space-between ;
+}
+
+a.logo{
+  font-weight: bold;
+  padding: 1em;
+  text-decoration:none;
+}
+
+nav ul{
+  list-style-type: none;
+  margin:0;
+}
+
+nav li a {
+  padding: 1rem;
+  display:inline;
+  text-decoration:none;
+}

@@ -1,0 +1,108 @@
+/* Style du formulaire */
+
+input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+select {
+  width: 107%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: left; /* Horizontal alignment */
+}
+input [type=radio]{
+  color: aqua;
+  }
+.element{
+  margin-right: 10px;
+}
+.element_2{
+  margin-right: 30px;
+  }
+form {
+margin: 0 auto;
+width: 100px;
+width: 35%;
+padding: 20px;
+border: 1px solid #b2c8dc63;
+border-radius: 10px;
+background: #b2c8dc63;
+box-shadow: 0 0 90px 0 #fafafa5d, 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* Style bouton */
+button {
+  background-color:  rgb(106, 119, 236);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover{
+  background: rgb(156, 164, 240);
+  color:white;
+  border-radius: 10px;
+}
+
+/* Style texte*/
+label{
+  font-weight: bold;
+}
+button{
+  font-weight: bold;
+}
+h2{
+  text-align:left;
+  color:  rgb(4, 6, 23);
+
+}
+
+/* Style du bouton radio personnalisé */
+.custom-radio {
+  opacity: 0; /* Masque le bouton radio natif */
+  width: 0;
+  height: 0;
+}
+/* Style de l'étiquette (label) pour créer un bouton personnalisé */
+.custom-radio + label {
+  position: relative;
+  padding-left: 20px; /* Espace réservé pour le bouton personnalisé */
+  cursor: pointer;
+}
+/* Style du cercle extérieur */
+.custom-radio + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border: 1px solid #b5b5b5;
+  border-radius: 50%;
+  background-color: #fff;
+}
+/* Style du point à l'intérieur du cercle lorsque le bouton radio est coché */
+.custom-radio:checked + label:before {
+  background-color:rgba(0, 0, 0, 0.183);
+  border: 2px solid  #b2c8dc63;
+}
+
+/*Style Backgroud*/
+
+

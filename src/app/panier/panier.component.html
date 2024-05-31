@@ -1,0 +1,50 @@
+
+  <h3>Tickets pour les J.0:</h3>
+
+  <form>
+
+      <div class="element_2">
+        <label form="date">Epreuve : </label>
+        <select id="epreuve" name="epreuve">
+          <option value="Course de hais">Course de hais</option>
+          <option value="Natation">Natation</option>
+          <option value="Equitation">Equitation</option>
+          <option value="Tir_a_l_arc">Tir a l'arc</option>
+          <option value="Escrime">Escrime</option>
+          <option value="Cyclisme">Cyclisme</option>
+          <option value="Football">Football</option>
+          <option value="Surf">Surf</option>
+      </select>
+      </div>
+
+      <label form="date">Date: </label>
+      <input type="date"  require value=""><br><br>
+
+      <div class="radio-group">
+        <div class="container">
+
+          <div class="element">
+            <input type="radio" id="solo" name="solo"  class="custom-radio" value="solo" />
+            <label for="solo">Solo: 24€ </label>
+          </div><br>
+
+          <div class="element">
+            <input type="radio" id="duo" name="duo"  class="custom-radio" value="duo"/>
+            <label for="duo">Duo: 48€ </label>
+          </div><br>
+
+          <div class="element">
+            <input type="radio" id="familiale" name="familiale"  class="custom-radio" value="familiale"/>
+            <label for="familiale">Familliale: 96€  </label>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <a routerLink="/qr-code-component" routerLinkActive="active">
+      <button type="submit" name="submit">Valider</button></a>
+
+      <br><br>
+
+  </form><br><br>
+

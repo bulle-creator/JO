@@ -1,0 +1,46 @@
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap ;
+  list-style-type: none;
+  padding: 0;
+}
+
+li a {
+  height: 21rem;
+  width: 22.5rem;
+  border: 1px solid whitesmoke;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+}
+
+li a:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+.content{
+  padding: .1rem 1rem;
+  position: relative;
+  height: 6rem;
+
+}
+
+.name{
+  font-weight: normal;
+}
+
+/* Style texte*/
+label{
+  font-weight: bold;
+}
+
+h2{
+  text-align:left;
+  color:  rgb(4, 6, 23);
+
+}

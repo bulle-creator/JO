@@ -1,0 +1,79 @@
+form {
+  border: 3px solid #f1f1f1;
+}
+/* Full-width inputs */
+input[type=text], input[type=mot_de_passe] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+form {
+margin: 0 auto;
+width: 100px;
+width:40%;
+padding: 20px;
+border: 1px solid #b2c8dc63;
+border-radius: 10px;
+background: #b2c8dc63;
+box-shadow: 0 0 90px 0 #fafafa5d, 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+/* Set a style for all buttons */
+button {
+  background-color:  rgb(106, 119, 236);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+h1{
+text-align: center;
+}
+a{
+text-align: left;
+}
+
+/* Barre de navigation*/
+*{
+margin: 0;
+text-decoration: none;
+}
+
+.navigation{
+float: right;
+height: 100%;
+}
+
+.navigation a{
+height: 80%;
+display: table;
+float: left;
+padding: 0px 20px;
+}
+.navigation a:last-child{
+padding-right: 0;
+}
+
+.navigation a li{
+display: table-cell;
+vertical-align: middle;
+height: 100%;
+color: rgb(255, 255, 255);
+font-family: 'Bodoni Moda', serif;
+font-size: 16px;
+}
+
+label{
+  font-weight: bold;
+}
+
+button{
+  font-weight: bold;
+}
+

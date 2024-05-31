@@ -1,0 +1,13 @@
+
+<br><br>
+
+<ul>
+  <li *ngFor="let sport of sports">
+    <a> <img src="{{sport.imageUrl}}" alt="">
+      <div class="content">
+          <div class="nom"> {{sport.name}} </div> <br>
+          <div class="description"> {{sport.description}} </div>
+      </div>
+    </a>
+  </li>
+</ul>

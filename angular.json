@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "allowedCommonJsDependencies": ["rxjs-compat"
+            "allowedCommonJsDependencies": ["rxjs-compat",
+            "node_modules/angularx-qrcode/fesm2022/angularx-qrcode.mjs"
             ],
             "outputPath": "dist/jo-2024",
             "index": "src/index.html",

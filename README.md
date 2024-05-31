@@ -67,7 +67,17 @@ Lors du devellopement de mon application j'ai rencontré certain probleme :
   ```
   
 - J'ai également eu du mal à afficher les épreuves. Mais cela était du a une eureur de synthaxe.
-
+- J'ai eu du mal avec le déploment et n'est pas réussi. J'ai utiliser *Heroku* et il y a eu un probleme par rapport au qrcode.
+ ```
+  Some possible problems:
+       
+       - Node version not specified in package.json
+         https://devcenter.heroku.com/articles/nodejs-support#specifying-a-node-js-version
+       
+       Love,
+       Heroku
+       
+  !     Push rejected, failed to compile Node.js app.
+  !     Push failed;
+ ```
 Pour le QrCode: *https://www.npmjs.com/package/angularx-qrcode*
-
-

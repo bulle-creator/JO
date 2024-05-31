@@ -1,28 +1,73 @@
-# Jo2024
+# JO-2024
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+## Documentation technique
 
-## Development server
+Pour la sécurité mettre le site en Https, chiffré les donnés(pour le paiement), avoir une authentification forte (12 caractères, chiffre, symbole, majuscule) et faire régulièrement des sauvegardes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Manuel D'utilisation 
+### Connexion
+Le visiteur peux naviguer librement sur le site sans être connecté,( pour cela cliquer sur JO-2024 pour voir les épreuves).
 
-## Code scaffolding
+<img width="77" alt="image" src="https://github.com/bulle-creator/JO-2024/assets/77787321/1171e84d-7dde-4d78-8bfc-5372aa50a2f0">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ Mais s'ils veulent achétent un ticket ils devront ce connecter. Pour cela il devront appuyer sur le bouton connexion:
 
-## Build
+<img width="89" alt="image" src="https://github.com/bulle-creator/JO-2024/assets/77787321/086bf62d-b66c-4153-ad00-d8323fbbe123">
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Puis s'ils ont un compte ce connecter, sinon crée un comtpe en appyant sur *Nouvelle utilisateur*
 
-## Running unit tests
+<img width="420" alt="image" src="https://github.com/bulle-creator/JO-2024/assets/77787321/20cc4025-2c24-4978-804a-61fc2d0b092a">
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Puis renseigner leurs informations:
 
-## Running end-to-end tests
+<img width="410" alt="image" src="https://github.com/bulle-creator/JO-2024/assets/77787321/480465a8-f29b-41ad-bbda-9a3cf7c31635">
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Aprés tout cela le visiteur pourras prendre son ticket. Pour cela appuyer sur le boutton ticket:
 
-## Further help
+<img width="88" alt="image" src="https://github.com/bulle-creator/JO-2024/assets/77787321/6bf2f029-8657-4edc-a857-68df5c8c454f">
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# JO
+Et choisissent leur sport, date et offre
+
+<img width="366" alt="image" src="https://github.com/bulle-creator/JO-2024/assets/77787321/dfff8f1b-8ae5-4573-a17c-9481db3e4d21">
+
+Aprés cela ils paient et reçoivent leur ticket sous forme de QrCode
+
+<img width="225" alt="image" src="https://github.com/bulle-creator/JO-2024/assets/77787321/e4ff3a81-0493-4323-be61-23338be94f2a">
+
+
+## Probleme rencontré
+
+Lors du devellopement de mon application j'ai rencontré certain probleme :
+ - Pour commencer mon Angular est en standalone donc pour le routing il a fallut, aller dans *app.routes.ts* est importer tout les components exemple.
+   
+   ```
+   import { Routes } from '@angular/router';
+   import { HomeComponent } from './home/home.component';
+   import { LoginComponent } from './login/login.component';
+
+   export const routes: Routes = [
+    { path: 'home-component' , component:HomeComponent,},
+    { path: 'login-component' , component:LoginComponent,},
+   ];
+   ```
+   et dans chaque nouveau fichier *.ts* importer **RouterLink,RouterOutlet** exemple:
+   ```
+   import { RouterLink, RouterOutlet } from '@angular/router';
+   
+   @Component({
+    selector: 'app-login',
+    standalone: true,
+    imports: [RouterLink, RouterOutlet],
+   ```
+- J'ai également eu du mal utiliser MongoDb car, plus habituer a phpMyAdmin (je trouve ça plus instinctif)
+  ```
+  INSERT INTO `user` (id,nom,prenom,login,role,password)
+	VALUES(1,'Emma','Wastone','Ewastone','user','Ewat45'),
+    	  (2,'Lorent','Yves','Lyves','admin','Admin123');
+  ```
+  
+- J'ai également eu du mal à afficher les épreuves. Mais cela était du a une eureur de synthaxe.
+
+Pour le QrCode: *https://www.npmjs.com/package/angularx-qrcode*
+
+

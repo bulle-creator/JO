@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { QRCodeModule } from 'angularx-qrcode';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-qr-code',

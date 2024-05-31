@@ -13,6 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "allowedCommonJsDependencies": ["rxjs-compat"
+            ],
             "outputPath": "dist/jo-2024",
             "index": "src/index.html",
             "browser": "src/main.ts",

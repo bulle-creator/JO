@@ -73,7 +73,12 @@ Lors du devellopement de mon application j'ai rencontré certain probleme :
 - J'ai eu du mal avec le déploment et n'est pas réussi. J'ai utiliser *Heroku* et il y a eu un probleme par rapport au qrcode.
 - J'ai eu du mal a joindre mon api a mon projet.
  ```
-  Some possible problems:
+-----> Build failed
+       
+       We're sorry this build is failing! You can troubleshoot common issues here:
+       https://devcenter.heroku.com/articles/troubleshooting-node-deploys
+       
+       Some possible problems:
        
        - Node version not specified in package.json
          https://devcenter.heroku.com/articles/nodejs-support#specifying-a-node-js-version
@@ -81,10 +86,11 @@ Lors du devellopement de mon application j'ai rencontré certain probleme :
        Love,
        Heroku
        
-  !     Push rejected, failed to compile Node.js app.
-  !     Push failed;
+ !     Push rejected, failed to compile Node.js app.
+ !     Push failed
  ```
 <img width="612" alt="image" src="https://github.com/bulle-creator/JO/assets/77787321/24196f66-e9b2-4112-bf48-1ebc59f86865">
+
 
 
 Pour le QrCode: *https://www.npmjs.com/package/angularx-qrcode*

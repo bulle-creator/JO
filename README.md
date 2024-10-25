@@ -96,5 +96,24 @@ Lors du devellopement de mon application j'ai rencontré certain probleme :
 Pour le QrCode: *https://www.npmjs.com/package/angularx-qrcode*
 
 
+<img width="908" alt="image" src="https://github.com/user-attachments/assets/43a425cc-8638-4230-b6d8-c738e1c795f3">
+<img width="917" alt="image" src="https://github.com/user-attachments/assets/b427e46e-04e4-4497-8b15-466288cf84dc">
+
+_____________________________________________________________________________________________________________________
+<img width="920" alt="image" src="https://github.com/user-attachments/assets/f9ea62e2-1725-4719-90b7-ed7b5053916d">
+_____________________________________________________________________________________________________________________
+<img width="386" alt="image" src="https://github.com/user-attachments/assets/5649fa56-3c4b-4da2-bab0-9ce11753a572">
+_____________________________________________________________________________________________________________________
+<img width="922" alt="image" src="https://github.com/user-attachments/assets/ac25b1c7-99da-4f35-977c-d5547bdd6604">
+_____________________________________________________________________________________________________________________
+<img width="922" alt="image" src="https://github.com/user-attachments/assets/080d85d4-cbe7-4863-9cae-31f303f7dc5d">
+_____________________________________________________________________________________________________________________
+<img width="911" alt="image" src="https://github.com/user-attachments/assets/f5fb83f1-0730-4dfa-8de8-e06c851bae53">
+
+
+
+
+
+
 
 

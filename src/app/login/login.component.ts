@@ -1,10 +1,11 @@
 import { NgFor } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterOutlet } from '@angular/router';
-//import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-login',
@@ -13,29 +14,33 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class LoginComponent {
-  username: string = '';
-  password: string = '';
+export class LoginComponent  {
 
- // constructor(private authService: AuthService, private router: Router) { }
+  loginObj: Login;
 
- // register() {
-  //  this.authService.register({ username: this.username, password: this.password })
-    //  .subscribe(
-  //     () => alert('User registered successfully'),
-     //   (error) => alert('Registration failed')
-    //  );
- // }
 
-//  login() {
-//    this.authService.login({ username: this.username, password: this.password })
-   //   .subscribe(
-     //   (response) => {
-    //      localStorage.setItem('token', response.token);
-     //     this.router.navigate(['/']);
-     //   },
-     //   (error) => alert('Login failed')
-    //  );
- // }
+  constructor(private http: HttpClient, private router:Router ) {
+    this.loginObj = new Login();
+  }
+
+  onLogin() {
+    debugger;
+    this.http.post('http://localhost:3000/api/users', this.loginObj).subscribe((res:any)=>{
+      if(res.result) {
+        alert("Connexion réussi");
+        this.router.navigateByUrl('/home-component');
+      } else {
+        alert ("Connexion Failed!");
+      }
+    });
+  }
+}
+export class Login{
+  login:string;
+  password:string;
+  constructor() {
+    this.login ='';
+    this.password ='';
+  }
 }
 

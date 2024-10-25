@@ -32,12 +32,6 @@ button {
   cursor: pointer;
   width: 100%;
 }
-button:hover{
-  background: rgb(156, 164, 240);
-  color:white;
-  border-radius: 10px;
-}
-
 h1{
 text-align: center;
 }
@@ -75,6 +69,13 @@ font-family: 'Bodoni Moda', serif;
 font-size: 16px;
 }
 
+button:hover{
+  background: rgb(106, 119, 236);
+  color:white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 label{
   font-weight: bold;
 }
@@ -82,4 +83,20 @@ label{
 button{
   font-weight: bold;
 }
+
+input[type=file]::file-selector-button  {
+
+  background: rgb(106, 119, 236);
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+
+}
+
 

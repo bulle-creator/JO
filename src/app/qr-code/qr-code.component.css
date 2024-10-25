@@ -8,3 +8,8 @@ form {
   background: #b2c8dc63;
   box-shadow: 0 0 90px 0 #fafafa5d, 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }
+
+  p{
+    margin: 0 auto;
+    padding: 20px;
+  }

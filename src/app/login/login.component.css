@@ -32,6 +32,12 @@ button {
   cursor: pointer;
   width: 100%;
 }
+button:hover{
+  background: rgb(156, 164, 240);
+  color:white;
+  border-radius: 10px;
+}
+
 h1{
 text-align: center;
 }

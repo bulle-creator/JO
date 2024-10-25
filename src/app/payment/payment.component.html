@@ -1,0 +1,40 @@
+<h3>Tickets pour les J.0:</h3>
+
+<form>
+    <label form="cb">Credit card number:* </label>
+    <input type="text"  require value=""><br><br>
+
+    <label form="name">Name as shown on card:* </label>
+    <input type="text"  require value=""><br><br>
+
+
+      <label form="text">Cvc:* </label>
+      <input type="text"  require value=""><br><br>
+
+      <label form="date">Date expiration:* </label>
+      <input type="month"  require value=""><br><br>
+
+    <div class="container">
+      <div class="element">
+        <input type="radio" id="solo" name="solo"  class="custom-radio" value="solo" />
+        <label for="solo"> PayPal </label>
+      </div><br>
+
+      <div class="element">
+        <input type="radio" id="duo" name="duo"  class="custom-radio" value="duo"/>
+        <label for="duo">Klama</label>
+      </div><br>
+
+      <div class="element">
+        <input type="radio" id="familiale" name="familiale"  class="custom-radio" value="familiale"/>
+        <label for="familiale">AfterPay</label>
+      </div>
+    </div>
+
+    <br>
+    <a routerLink="/qr-code-component" routerLinkActive="active">
+      <button type="submit" name="submit">Payement</button></a>
+    <br><br>
+
+</form><br><br>
+
